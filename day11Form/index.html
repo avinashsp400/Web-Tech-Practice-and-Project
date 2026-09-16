@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor Mart</title>
+</head>
+<body>
+    <header align="center">
+        <h1>Vendor Mart</h1>
+        <p>Online Vendor Registration Portal</p>        
+        <a href="#register">Register</a> | 
+        <a href="#products">Products</a> | 
+        <a href="#help">Help</a>
+    </header>
+    <hr>
+    <main>
+        <section align="center">
+            <h2>Become a Vendor</h2>
+            <p>Join VendorMart and start selling your products online. Complete the registration form below.</p>
+            <img src="./images/vendormart.jpg" alt="VendorMart" width="100%">
+        </section>
+        <hr>
+        <section id="products">
+            <h2>Popular Product Categories</h2>
+            <div>
+                <img src="./images/Mobiles & Accessories.jpg" alt="Mobiles & Accessories" width="300px" height="200px">
+                <p>Mobiles & Accessories</p>
+            </div>
+            <div>
+                <img src="./images/laptop.jpg" alt="Laptops" width="300px" height="200px">
+                <p>Laptops</p>
+            </div>
+            <div>
+                <img src="./images/headphones.jpg" alt="Headphones" width="300px" height="200px">
+                <p>Headphones</p>
+            </div>
+        </section>
+        <hr>
+
+        <section id="register">
+            <h2>Vendor Registration</h2>
+            <form action="" method="get" id="regForm" name="regForm" autocomplete="off">
+                <fieldset>
+                    <legend>Account Details</legend>
+                    <br>
+                    <div>
+                        <lable for="vname">Vendor Name</lable>
+                        <br><br>
+                        <input type="text" id="vname" name="vname" placeholder="Enter Vendor Name"/>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="password">Password</label>
+                    <br><br>
+                        <input type="password" id="password" name="password" placeholder="Enter Password" />
+                    </div>
+                    <br>
+                    <div>
+                        <label for="bemail">Business Email</label>
+                        <br><br>
+                        <input type="email" id="bemail" name="bemail"
+                        placeholder="Enter Business Email" />
+                    </div>
+                </fieldset>
+                <br>
+
+                <fieldset>
+                    <legend>Business Details</legend>
+                    <br>
+                    <div>
+                        <lable for="webside">Company Website</lable>
+                        <br><br>
+                        <input type="url" id="webside" name="webside" placeholder="https://example.com"/>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="">Products</label>
+                    <br><br>
+                        <input type="text" placeholder="search" list="p">
+                        <datalist id="p">
+                            <option value="Mobiles">Mobiles</option>
+                            <option value="laptop">laptop</option>
+                            <option value="headphone">HeadPhone</option>
+                            <option value="gaming">Gaming</option>
+                        </datalist>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="quanity">Quantity</label>
+                        <br><br>
+                        <input type="number" id="quanity" name="quanity"
+                        value="1" style="width:50px;"/>
+                    </div>
+                </fieldset>
+                <br>
+
+                <fieldset>
+                    <legend>Vendor Verification</legend>
+                    <br>
+                    <div>
+                        <lable for="vid">Vendor ID</lable>
+                        <br><br>
+                        <input type="text" id="vid" name="vid" value="VM1024"/>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="gstNo">GST Number</label>
+                        <br><br>
+                        <input type="text" id="gstNo" name="gstNo"
+                        value="29ABCDE1234F1Z5" readonly/>
+                    </div>
+                    <br>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <div>
+                        <legend>Additional Information</legend>
+                        <br>
+                        <label for="address">Business Address</label><br><br>
+                        <textarea id="address" rows="5" cols="40"></textarea>
+                    </div>
+                    <br>
+                    <div>
+                        <label>Vedor Type</label>
+                        <br>
+                        <input id="m" name="vtype" value="m" type="radio"/>
+                        <label for="m">Manufacturer </label>
+                        <input type="radio" id="s" name="vtype" value="s">
+                        <label for="s">Supplier</label>
+                        <input type="radio" id="r" name="vtype" value="r">
+                        <label for="r">Retailer</label>
+                    </div>
+                </fieldset>
+                <div>
+                    <br>
+                    <input type="checkbox" id="tc">
+                     <label for="tc">I agree to the VendorMart terms and conditions.</label>
+                    <br><br>
+                    <button type="submit" id="submit" name="submit">Register Vendor</button>
+                    <button type="reset" id="reset" name="reset">Clear Form</button>
+                </div>
+                
+            </form> 
+        </section>
+        <hr>
+
+        <section id="help">
+            <h2>Need Help?</h2>
+            <p>New vendors can check our registration guidelines.</p>
+            <p><a href="https://www.google.com/">Vendor Registration Guide (Google)</a></p>
+            <p><a href="mailto:abc@gmail.com">Contact Support</a></p>
+        </section>
+    </main>
+    <hr>
+    <footer align="center">
+        <p>&copy; 2026 VendorMart. All Rights Reserved.</p>
+        <p><a href="#register">Back to Registration</a></p>
+    </footer>
+
+</body>
+</html>

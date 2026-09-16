@@ -1,0 +1,477 @@
+				HTML Text Formatting & Typography 
+			===============================================
+
+==> Text Formatting:
+    ````````````````
+1. <h1> to <h6> (Headings) : Used to create headings. <h1> is the biggest heading and <h6> is the smallest.
+
+2. <p> (Paragraph) : Used to write a paragraph of text.
+
+3. <blockquote> (Quote) : Used to display a long quotation from another source.
+
+
+==> Design Mode Tags (Only Design):
+    ```````````````````````````````
+
+1. <b> : Makes the text bold.
+
+2. <i> : Makes the text italic.
+
+3. <u> : Underlines the text.
+
+4. <strike> : Draws a line through the text. (Old tag)
+
+
+==> Semantic (Meaningful) Tags :
+    ````````````````````````````
+1. <strong> : Marks important text. It usually appears bold.
+
+2. <em> : Marks emphasized text. It usually appears italic.
+
+3. <ins> : Shows newly inserted text. It is usually underlined.
+
+4. <del> : Shows deleted or removed text with a strike line.
+
+
+-> Semantic means providing some meaing to the browser about our content present in HTML element/tag.
+
+
+==> Other Tags:
+    ```````````
+1. <sup> : Displays text slightly above the normal line (Superscript).
+
+		Example: 5th → 5<sup>th</sup>
+
+2. <sub> : Displays text slightly below the normal line (Subscript).
+
+		Example: H₂O → H<sub>2</sub>O
+
+
+==> Block Level Elements :
+    ``````````````````````
+	A block-level element always starts on a new line and takes the full width available from left to right by default.
+
+	In simple words:
+		"One block element occupies one complete line."
+
+-> Even if there is enough space, the next element always starts on a new line.
+
+-> <div> Tag:
+   ``````````
+	<div> is a "block-level container" used to group multiple HTML elements together for styling, layout, or scripting.
+
+
+==> Inline Elements : 
+    `````````````````
+	An inline element displays content in the same line and takes only the width required by its content.
+
+	In simple words:
+		"An inline element does not start on a new line and occupies only the space it needs."
+
+-> <span> Tag:
+   ```````````
+	<span> is an "inline container" used to style or modify a small part of text without creating a new line.
+
+
+==> Typography (CSS):
+    `````````````````
+1. text-indent -> Adds space before the first line of a paragraph.
+
+2. ::first-letter -> Styles only the first letter of a paragraph (Drop Cap effect).
+
+3. letter-spacing -> Increases or decreases the space between letters.
+
+4. word-spacing -> Increases or decreases the space between words.
+
+5. line-height -> Controls the space between lines of text.
+
+6. overflow: auto -> Shows a scrollbar only when the content is too large.
+
+7. text-overflow: ellipsis -> Displays "..." when the text is too long to fit.
+
+
+
+==> Font Styles: (Deprecated) no longer using or outdated.
+    ````````````
+<font> (Deprecated) : Used to change font size, colour, and style in old HTML. Today, CSS is used instead.
+
+
+==> Web Safe Fonts: (web-safe font family)
+    ```````````````
+
+-> Serif : Font with small decorative(Tails) lines at the ends of letters.
+
+			Example: Times New Roman
+
+-> Sans-serif : Font without decorative(Tails) lines. Looks clean and modern.
+
+			Example: Arial
+
+-> Monospace : Every letter takes the same width.
+
+			Example: Courier New
+
+
+==> Color Formats:
+    ``````````````
+1. Color Name : Uses the colour name directly.
+
+		Example: red
+
+2. Shade Name: Uses a shade of a colour.
+
+		Example: gray
+
+3. Hex Code: Represents colours using hexadecimal values.
+
+		Example: #FF0000
+
+
+==> HTML Containers:
+    ````````````````   
+1. <fieldset> : Groups related form elements inside a box.
+
+2. <legend> : Displays the title of a <fieldset>.
+
+
+----------------------------------------------------------------------------------------------
+
+
+
+Q1. Which HTML element is NOT recommended in modern web design?
+
+A) <strong>
+
+B) <font>
+
+C) <em>
+
+D) <span>
+
+Answer: B
+
+
+Q2. Which tag provides semantic meaning instead of only making text bold?
+
+A) <b>
+
+B) <strong>
+
+C) <font>
+
+D) <big>
+
+Answer:  B
+
+
+Q3. Which tag displays italic text with semantic meaning?
+
+A) <i>
+
+B) <em>
+
+C) <italic>
+
+D) <style>
+
+Answer: B
+
+
+Q4. What is the default font size in HTML?
+
+A) 1
+
+B) 2
+
+C) 3
+
+D) 4
+
+Answer: C
+
+
+Q5. Which of the following is a generic web-safe font family?
+
+A) Arial
+
+B) sans-serif
+
+C) Roboto
+
+D) Poppins
+
+Answer: B
+
+
+
+Q6. Which tag displays subscript text?
+
+A) <sup>
+
+B) <sub>
+
+C) <small>
+
+D) <strike>
+
+Answer: B
+
+
+Q7. Which tag displays superscript text?
+
+A) <sub>
+
+B) <sup>
+
+C) <small>
+
+D) <big>
+
+Answer: B
+
+
+Q8. Which CSS selector creates a Drop Cap effect?
+
+A) font-size
+
+B) ::first-letter
+
+C) text-indent
+
+D) letter-spacing
+
+Answer:  B
+
+
+Q9. Which CSS property indents the first line of a paragraph?
+
+A) margin-left
+
+B) padding-left
+
+C) text-indent
+
+D) letter-spacing
+
+Answer: C
+
+
+Q10. Which property increases the space between letters?
+
+A) word-spacing
+
+B) line-height
+
+C) letter-spacing
+
+D) padding
+
+Answer: C
+
+
+Q11. Which property increases the space between words?
+
+A) word-spacing
+
+B) letter-spacing
+
+C) line-height
+
+D) margin
+
+Answer: A
+
+
+Q12. Which property controls the spacing between lines?
+
+A) padding
+
+B) margin
+
+C) line-height
+
+D) letter-spacing
+
+Answer: C
+
+
+Q13. Which element groups related form controls?
+
+A) <section>
+
+B) <fieldset>
+
+C) <legend>
+
+D) <form>
+
+Answer:B
+
+
+Q14. Which tag gives a title to a <fieldset>?
+
+A) <summary>
+
+B) <caption>
+
+C) <legend>
+
+D) <label>
+
+Answer: C
+
+
+Q15. Which CSS property shows scrollbars only when required?
+
+A) overflow:hidden
+
+B) overflow:auto
+
+C) overflow:visible
+
+D) overflow:none
+
+Answer: B
+
+
+Q16. Which pair correctly matches Design Mode and Review Mode elements?
+
+A) <b> → <strong>
+
+B) <u> → <sub>
+
+C) <sup> → <strong>
+
+D) <font> → <em>
+
+Answer: A
+
+
+Q17. Which tag is semantic?
+
+A) <b>
+
+B) <i>
+
+C) <strong>
+
+D) <strike>
+
+Answer: C
+
+
+Q18. Which of the following is NOT a container element?
+
+A) <fieldset>
+
+B) <details>
+
+C) <dialog>
+
+D) <sup>
+
+Answer: D
+
+
+Q19. Which HTML element is a block-level container?
+
+A) <span>
+
+B) <div>
+
+C) <a>
+
+D) <b>
+
+Answer: B
+
+
+Q20. Which HTML element is an inline container?
+
+A) <div>
+
+B) <section>
+
+C) <span>
+
+D) <article>
+
+Answer: C
+
+
+Q21. Which statement is TRUE about the <div> element?
+
+A) It is an inline element.
+
+B) It starts on a new line.
+
+C) It displays text in italic.
+
+D) It is used only inside forms.
+
+Answer: B
+
+
+Q22. Which statement is TRUE about the <span> element?
+
+A) It starts on a new line.
+
+B) It occupies the full width.
+
+C) It stays in the same line.
+
+D) It creates a paragraph.
+
+Answer: C
+
+
+Q23. What is the main purpose of the <div> tag?
+
+A) To create hyperlinks
+
+B) To group HTML elements
+
+C) To display images
+
+D) To create tables
+
+Answer: B
+
+
+Q24. What is the main purpose of the <span> tag?
+
+A) To group a small portion of text
+
+B) To create forms
+
+C) To create headings
+
+D) To create lists
+
+Answer: A
+
+
+Q25. Which element occupies only the required width by default?
+
+A) <div>
+
+B) <section>
+
+C) <span>
+
+D) <article>
+
+Answer: C
+
+
+Q26. Which element occupies the full available width by default?
+
+A) <span>
+
+B) <strong>
+
+C) <em>
+
+D) <div>
+
+Answer: D

@@ -1,0 +1,173 @@
+<!--Create an webpage that demonstrate the use of rowspan and colspan in different cases -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+</head>
+<body>
+    <table border="1px" cellpadding="5px" cellspacing="0px">
+        <caption >Example 1: Using Rowspan</caption>
+            <thead>
+                <tr>
+                    <th rowspan="3">Name</th>
+                    <th>Age</th>
+                </tr>
+                <tr>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>45</td>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Total Rows: 3</td>
+                </tr>
+            </tfoot>
+        
+    </table>
+    <br>
+
+    <table border="1px" cellpadding="5px" cellspacing="0px">
+        <caption>Example 2: Using Colspan</caption>
+        
+                    <thead>
+            <tr>
+                <th>Name</th>
+                <th colspan="2">Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John</td>
+                <td>Age:25</td>
+                <td>City:New York</td>
+            </tr>
+            <tr>
+                <td>jane</td>
+                <td>Age:30</td>
+                <td>City:London</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">
+                    This row spans across all columns
+                </td>
+            </tr>
+        </tfoot>
+        
+    </table>
+    <br>
+
+    <table border="1px" cellpadding="5px" cellspacing="0px">
+        <caption>Example 3: Combining Rowspan and Colspan</caption>
+        
+            <thead>
+            <tr>
+                <th colspan="3">Project Information</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">John</td>
+                <td>Task1</td>
+                <td>Completed</td>
+            </tr>
+            <tr>
+                <td>Task2</td>
+                <td>In Progress</td>
+            </tr>
+            <tr>
+                <td>Task3</td>
+                <td>Pending</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">
+                    End of Data
+                </td>
+            </tr>
+        </tfoot>
+        
+    </table>
+    <br>
+
+    <table border="1px" cellspacing="0px" cellpadding="5px">
+        <cpation>Example 4:Complex Rolspan and Colspan</cpation>
+       
+            <thead>
+                <tr>
+                    <th rowspan="2">Name</th>
+                    <th colspan="2">Contact</th>
+                    <th rowspan="2">City</th>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <th>Phone</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>john@gmail.com</td>
+                    <td>123-456-7890</td>
+                    <td>New Yourk</td>
+                </tr>
+                <tr>
+                    <td>Jane</td>
+                    <td>Jane@gmail.com</td>
+                    <td>123-456-7890</td>
+                    <td>London</td>
+                </tr>
+            </tbody>
+       
+    </table>
+    <br>
+
+    <table border="1px" cellpadding="5px" cellspacing="0px">
+        <caption>Example 5: Nested Rowspan and Colspan</caption>
+        
+            <thead>
+                <tr>
+                    <th rowspan="2">Department</th>
+                    <th colspan="3">Employees</th>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td>Role</td>
+                    <td>Years</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">HR</td>
+                    <td>John</td>
+                    <td>Manager</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Jane</td>
+                    <td>Assitant</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">IT</td>
+                    <td>Mike</td>
+                    <td>Developer</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Alice</td>
+                    <td>Admin</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        
+    </table>
+</body>
+</html>
