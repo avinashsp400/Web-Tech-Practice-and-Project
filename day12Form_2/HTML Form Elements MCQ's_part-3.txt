@@ -1,0 +1,614 @@
+			HTML Form Elements MCQ's_part-3
+		=============================================
+
+---------------------------------------------------------------------------------
+
+1. Positive Lookahead:
+   ```````````````````
+(?=.*[A-Z]) → At least 1 Uppercase
+
+(?=.*[0-9]) → At least 1 Number
+
+(?=.*[\W]) → At least 1 Special Character
+
+-> Positive Lookahead checks if something exists.
+
+
+2. Number Input:
+   `````````````
+	<input type="number">
+
+-> Attributes:
+	  min → Minimum value
+	  max → Maximum value
+	  value → Default value
+	  step → Increment / Decrement
+
+	Example:
+		<input type="number" min="1" max="100" step="5">
+
+3. Range Input:
+   ````````````
+	<input type="range">
+
+-> It will display Slider on the browser .
+
+-> Uses:
+	Volume
+	Brightness
+	Rating
+
+
+4. Date Inputs:
+   ````````````
+-> date
+-> time
+-> datetime-local
+-> month
+-> week
+
+-> Important:
+	Default date Format,
+			YYYY-MM-DD
+
+
+5. Color Input:
+   ````````````
+	<input type="color">
+
+-> Shows Color Picker.
+
+-> Recommended Format,
+		  #RRGGBB
+
+	Example:
+		#FF0000
+
+
+6. File Input:
+   ```````````
+	<input type="file">
+
+-> Important Attributes,
+			1. accept
+			2. multiple
+1. accept:
+	-> Only Browser filter.
+	-> No Restriction.
+
+2. multiple:
+	-> We can select Multiple files.
+
+
+7. Textarea:
+   `````````
+	<textarea></textarea>
+
+-> We use it for Multiline Input.
+
+-> Attributes,
+	    1. rows
+	    2. cols
+	    3. placeholder
+	    4. required
+	    5. readonly
+	    6. disabled
+	    7. minlength
+	    8. maxlength
+
+-> We not allowed to use value attribute.
+
+
+
+8. <meter> Tag:
+
+--> What is "<meter>"?
+
+-> <meter> is used to show a "measured value" within a range.
+-> It displays "how much is used or available".
+
+-> Syntax,
+	<meter value="60" min="0" max="100"></meter>
+
+-> Important Attributes,
+
+| Attribute | Meaning          |
+| --------- | ---------------- |
+|  value    | Current value    |
+
+|  min      | Minimum value    |
+
+|  max      | Maximum value    |
+
+|  low      | Low value limit  |
+
+|  high     | High value limit |
+
+|  optimum  | Best value       |
+
+-> optimum attribute specifies the ideal or best value in a <meter> element.
+
+	Example:
+
+		<label>Battery:</label>
+		<meter value="80" min="0" max="100"></meter>
+
+	Output: 
+		Battery Level = 80%
+
+-> Real-Life Uses,
+	- Battery Level
+	- Disk Usage
+	- Temperature
+	- Fuel Level
+	- Exam Score
+
+-> Meter = Shows a Value (Current Status).
+
+
+
+9. <progress> Tag:
+
+-> What is <progress>?
+
+	- <progress> is used to show task completion.
+	- It displays how much work is completed.
+
+	Syntax:
+		<progress value="40" max="100"></progress>
+
+
+Important Attributes
+
+| Attribute | Meaning        |
+| --------- | -------------- |
+|  value    | Completed work |
+
+|  max      | Total work     |
+
+
+	Example:
+
+		<label>Downloading:</label>
+		<progress value="70" max="100"></progress>
+
+	Output:
+		Download = 70% Complete
+
+-> Real-Life Uses,
+	- File Download
+	- File Upload
+	- Loading Process
+	- Installation Progress
+	- Form Completion
+
+-> Progress = Shows Task Completion.
+
+
+-> Meter vs Progress
+
+|  <meter>                                   |  <progress>                   |
+| ------------------------------------------ | ----------------------------- |
+| Shows a measured value                     | Shows task completion         |
+
+| Example: Battery 80%                       | Example: Download 80%         |
+
+| Has "min", "max", "low", "high", "optimum" | Mainly uses "value" and "max" |
+
+| Current Status                             | Work Progress                 |
+
+
+<meter> → Displays a value within a known range.
+<progress> → Displays the progress of a running task.
+
+--------------------------------------------------------------------------------------------------------------
+
+1. Which input type displays a slider?
+
+A) text
+
+B) range
+
+C) number
+
+D) meter
+
+Answer: B
+
+
+2. Which attribute controls the increment/decrement value in 
+	<input type="number">?
+
+A) max
+
+B) value
+
+C) step
+
+D) size
+
+Answer: C
+
+
+3. What is the default step value for "<input type="number">" if not specified?
+
+A) 0
+
+B) 1
+
+C) 10
+
+D) 100
+
+Answer:A
+
+
+4. Which input type allows decimal numbers using step="0.01"?
+
+A) text
+
+B) number
+
+C) range
+
+D) Both B and C
+
+Answer:B
+
+
+5. Which input type is best for selecting a birthday?
+
+A) datetime-local
+
+B) date
+
+C) week
+
+D) month
+
+Answer:B
+
+
+6. What is the correct format of the value for <input type="date">?
+
+A) DD-MM-YYYY
+
+B) MM/DD/YYYY
+
+C) YYYY-MM-DD
+
+D) DD/MM/YYYY
+
+Answer:C
+
+
+7. Which input type allows selecting only month and year?
+
+A) date
+
+B) month
+
+C) week
+
+D) time
+
+Answer:B
+
+
+8. Which input type allows selecting both date and time together?
+
+A) date
+
+B) datetime
+
+C) datetime-local
+
+D) time
+
+Answer: C
+
+
+9. What is the correct format for "datetime-local"?
+
+A) YYYY/MM/DD HH:MM
+
+B) YYYY-MM-DD HH:MM
+
+C) YYYY-MM-DDTHH:MM
+
+D) DD-MM-YYYYTHH:MM
+
+Answer:B
+
+
+10. Which character separates date and time in "datetime-local"?
+
+A) -
+
+B) :
+
+C) T
+
+D) /
+
+Answer:C
+
+
+11. Which input type allows selecting a week?
+
+A) date
+
+B) month
+
+C) week
+
+D) year
+
+Answer:C
+
+
+12. Which format is correct for type="week"?
+
+A) Week-29
+
+B) 2026-W29
+
+C) W29-2026
+
+D) 29-2026
+
+Answer:D
+
+
+13. Which HTML input type displays a color picker?
+
+A) paint
+
+B) color
+
+C) rgb
+
+D) palette
+
+Answer:B
+
+
+14. Which value is recommended for <input type="color">?
+
+A) red
+
+B) rgb(255,0,0)
+
+C) #FF0000
+
+D) color(red)
+
+Answer:C
+
+
+15. Which attribute sets the default selected color?
+
+A) default
+
+B) value
+
+C) color
+
+D) selected
+
+Answer:B
+
+
+16. Which input type opens the file browser?
+
+A) upload
+
+B) browse
+
+C) file
+
+D) attachment
+
+Answer: C
+
+
+17. Which attribute filters the file types displayed in the file picker?
+
+A) filter
+
+B) type
+
+C) accept
+
+D) extension
+
+Answer: C
+
+
+18. Which attribute allows selecting multiple files?
+
+A) many
+
+B) files
+
+C) multiple
+
+D) multiselect
+
+Answer: C
+
+
+19. Which statement about "accept" is TRUE?
+
+A) It permanently blocks all other file types.
+
+B) It only filters the selectable file types.
+
+C) It encrypts uploaded files.
+
+D) It validates files on the server.
+
+Answer:B
+
+
+20. Which element is used for multiline input?
+
+A) input
+
+B) textarea
+
+C) textbox
+
+D) paragraph
+
+Answer:B
+
+
+21. Which attribute can only "suggest" file types but cannot completely prevent users from selecting other files?
+
+A) multiple
+
+B) required
+
+C) accept
+
+D) pattern
+
+Answer: C
+
+
+22. Which element accepts multiple lines of text?
+
+A) <input type="text">
+
+B) <input type="password">
+
+C) <textarea>
+
+D) <meter>
+
+Answer:C
+
+
+23. Which attribute is NOT applicable to <textarea>?
+
+A) rows
+
+B) cols
+
+C) value
+
+D) placeholder
+
+Answer:C
+
+
+24. Which HTML element is best suited to display a battery level?
+
+A) <progress>
+
+B) <meter>
+
+C) <range>
+
+D) <number>
+
+Answer:B
+
+
+25. Which HTML element is best suited to display the progress of a file upload?
+
+A) <meter>
+
+B) <textarea>
+
+C) <progress>
+
+D) <range>
+
+Answer:C
+
+
+26. Which statement is TRUE about "<meter>" and "<progress>"?
+
+A) Both are used only for file uploads.
+
+B) <meter> displays measurements, <progress> displays ongoing task progress.
+
+C) <progress> is used for battery percentage.
+
+D) Both work exactly the same.
+
+Answer:B
+
+
+27. Consider the pattern:
+
+		pattern="^[A-Z][a-z]{3,14}$"
+Which value is valid?
+
+A) bharath
+
+B) BHARATH
+
+C) Bharath
+
+D) bharath123
+
+Answer:C
+
+
+28. What does the following pattern ensure?
+
+(?=.*[A-Z])
+
+A) At least one lowercase letter
+
+B) At least one uppercase letter
+
+C) Only uppercase letters
+
+D) Uppercase at the beginning only
+
+Answer:B
+
+
+29. What does the following pattern ensure?
+
+(?=.*[0-9])
+
+A) Input starts with a number.
+
+B) Input contains at least one number.
+
+C) Only numbers are allowed.
+
+D) Number must be at the end.
+
+Answer:B
+
+
+30. Which pattern ensures that the input contains at least one uppercase letter, one number, and one special character?
+
+A) [A-Za-z]{4,15}
+
+B) [A-Z0-9]{4,15}
+
+C) (?=.*[A-Z])(?=.*[0-9])(?=.*[\W])[\w\W]{4,15}
+
+D) [A-Za-z0-9]{4,15}
+
+Answer:C
+
+
+31. Which of the following is "NOT" a valid use of the "pattern" attribute?
+
+A) <input type="text" pattern="[A-Z]{3}">
+
+B) <input type="password" pattern="(?=.*[A-Z]).{8,}">
+
+C) <input type="email" pattern=".+@gmail\.com">
+
+D) <input type="file" pattern="[A-Z]{3}">
+
+Answer:C

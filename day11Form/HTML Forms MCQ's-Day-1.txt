@@ -1,0 +1,840 @@
+Summary
+
+1. What is a Form?
+
+-> Form is an HTML container.
+-> It is used to collect data from the user.
+-> Forms provide a User Interface (UI) to interact with an application.
+
+-> Syntax:
+	<form>
+
+	</form>
+
+
+2. UI (User Interface):
+		-> UI means "the part of the application visible to the user."
+
+	Example:
+	    Login Form
+	    Registration Form
+	    Contact Form
+	    Payment Form
+
+
+3. CRUD Operations
+
+| Operation | Meaning      | Example              |
+| --------- | ------------ | -------------------- |
+| Create    | Add New Data | Register Student     |
+| Read      | View Data    | View Student Details |
+| Update    | Modify Data  | Edit Profile         |
+| Delete    | Remove Data  | Delete Account       |
+
+-> Forms are mainly used to perform CRUD operations.
+
+
+4. Form is a Container:
+	
+     -> A form can contain different controls like,
+						Textbox
+						Password Box
+						Checkbox
+						Radio Button
+						Dropdown
+						Textarea
+						Button
+						File Upload
+
+
+5. Form Attributes:
+
+=> id:
+      -> Unique identifier.
+      -> Used in CSS and JavaScript.
+      -> Syntax: <form id="loginForm">
+
+
+=> class:
+      -> Used to apply the same style to multiple forms.
+      -> Syntax: <form class="box">
+
+
+=> name:
+      -> Used for reference in JavaScript and server-side programming.
+      -> <form name="studentForm">
+
+
+6. method Attribute:
+	-> It decides, how the form data is sent to the server.
+	
+	-> There are only 2 methods,
+				1. GET
+				2. POST
+
+	-> Default method is GET.
+
+
+7. GET Method:
+	-> GET sends data as "Query String".
+			
+			Example:
+				login.html?username=Rahul
+
+	-> Characteristics,
+			1. Data visible in URL
+			2. Less secure
+			3. Can be bookmarked
+			4. Stored in browser history
+			5. Can be cached
+			6. Limited data
+
+	-> We Cannot upload files.
+
+8. Query String:
+	-> Everything after "?" in URL.
+
+		Example:
+		     student.html?id=101&name=Ravi
+	
+	-> '?' => Starts Query String
+	-> '&' => Separates multiple values
+
+
+9. POST Method:
+	-> POST sends data inside Form Body (Request Body).
+
+		Example URL:
+			login.jsp
+
+	-> Username and password are "NOT visible".
+
+	-> Characteristics,
+			1. More secure
+			2. Large amount of data
+			3. Supports file upload
+			4. No URL length limit
+			5. Not stored in browser history
+			6. Cannot be bookmarked
+			7. Not cached
+
+
+10. GET vs POST
+
+| GET            | POST                  |
+| -------------- | --------------------- |
+| Query String   | Form Body             |
+| Visible        | Hidden                |
+| Less Secure    | More Secure           |
+| Bookmark       | No Bookmark           |
+| Cached         | Not Cached            |
+| History        | No History            |
+| Limited Data   | Large Data            |
+| No File Upload | File Upload Supported |
+
+
+11. Cache:
+	-> Cache means, Temporary storage used to load data faster.
+
+			Example:
+				Browser stores
+					-> Images
+					-> CSS
+					-> JavaScript
+	-> If again you try to visit,
+				Second visit
+				      ↓
+			       Loads from cache
+				      ↓
+			     Website becomes faster.
+
+
+12. novalidate:
+	-> Disables browser's default HTML validation.
+	-> Syntax: 
+		<form novalidate>
+	
+	-> Mostly used when developer writes custom validation.
+
+
+13. Browser Validation:
+		-> Without novalidate browser automatically checks required, email, number.
+
+			Example:
+			     Please fill out this field.
+
+14. Custom Validation:
+		-> Developer writes validation, is generally used.
+
+
+15. action:
+	-> Specifies where the form data should be submitted.
+	-> Syntax: 
+		<form action="login.jsp">
+
+=================================================================================
+
+ 				HTML Forms MCQ's
+			---------------------------------
+
+1. What is the primary purpose of an HTML form?
+
+A) Styling webpages
+
+B) Collecting user input
+
+C) Creating animations
+
+D) Displaying videos
+
+Answer:B
+
+
+2. Which tag creates a form?
+
+A) <table>
+
+B) <input>
+
+C) <form>
+
+D) <body>
+
+Answer:C
+
+
+3. HTML Forms mainly help perform
+
+A) OOPS
+
+B) CRUD
+
+C) DOM
+
+D) AJAX
+
+Answer:B
+
+
+4. CRUD stands for
+
+A) Create Read Update Delete
+
+B) Create Remove Upload Download
+
+C) Copy Read Update Delete
+
+D) Create Render Update Design
+
+Answer:A
+
+
+5. Which operation adds new data?
+
+A) Read
+
+B) Delete
+
+C) Create
+
+D) Update
+
+Answer:C
+
+
+6. Which operation modifies existing data?
+
+A) Create
+
+B) Update
+
+C) Read
+
+D) Save
+
+Answer:B
+
+
+7. Which operation removes data?
+
+A) Delete
+
+B) Read
+
+C) Update
+
+D) Search
+
+Answer:A
+
+
+8. A form is technically a
+
+A) Function
+
+B) Container
+
+C) Variable
+
+D) Loop
+
+Answer:B
+
+
+9. Which of these is NOT a form control?
+
+A) Checkbox
+
+B) Radio Button
+
+C) Textbox
+
+D) <div>
+
+Answer:D
+
+
+10. Which attribute uniquely identifies a form?
+
+A) class
+
+B) id
+
+C) style
+
+D) method
+
+Answer:B
+
+
+11. Which attribute is commonly used to apply the same CSS to multiple forms?
+
+A) id
+
+B) class
+
+C) method
+
+D) action
+
+Answer:B
+
+
+12. Which attribute decides how data is sent?
+
+A) action
+
+B) method
+
+C) id
+
+D) name
+
+Answer:B
+
+
+13. Default method of a form is
+
+A) POST
+
+B) PUT
+
+C) GET
+
+D) DELETE
+
+Answer:C
+
+
+14. GET method sends data as
+
+A) Form Body
+
+B) Query String
+
+C) JSON
+
+D) XML
+
+Answer:B
+
+
+15. POST sends data inside
+
+A) URL
+
+B) Query String
+
+C) Form Body
+
+D) CSS
+
+Answer:C
+
+
+16. Which method displays data in URL?
+
+A) POST
+
+B) GET
+
+C) PUT
+
+D) DELETE
+
+Answer:B
+
+
+17. Which method is more secure?
+
+A) GET
+
+B) POST
+
+C) Both
+
+D) None
+
+Answer:B
+
+
+18. Which method supports file upload?
+
+A) GET
+
+B) POST
+
+C) Both
+
+D) None
+
+Answer:B
+
+
+19. Which method has URL length limitation?
+
+A) GET
+
+B) POST
+
+C) Both
+
+D) None
+
+Answer:A
+
+
+20. Which method data can be bookmarked?
+
+A) POST
+
+B) GET
+
+C) Both
+
+D) None
+
+Answer:B
+
+
+21. Which method is generally cached?
+
+A) POST
+
+B) GET
+
+C) PUT
+
+D) DELETE
+
+Answer:B
+
+
+22. Cache means
+
+A) Permanent Storage
+
+B) Temporary Storage
+
+C) Database
+
+D) Server
+
+Answer:B
+
+
+23. Which attribute specifies where form data is sent?
+
+A) method
+
+B) action
+
+C) class
+
+D) name
+
+Answer:B
+
+
+24. Which attribute disables browser validation?
+
+A) action
+
+B) method
+
+C) novalidate
+
+D) class
+
+Answer:C
+
+
+25. Browser default validation is mainly disabled when
+
+A) CSS is used
+
+B) Bootstrap is used
+
+C) Custom validation is written
+
+D) HTML is removed
+
+Answer:C
+
+
+26. A developer creates a form.
+
+No `method` attribute is specified.
+
+Which method will be used?
+
+A) POST
+
+B) PUT
+
+C) GET
+
+D) DELETE
+
+Answer:C
+
+
+27. Which statement about GET is TRUE?
+
+A) Data is stored in Form Body.
+
+B) Data is hidden from users.
+
+C) Data is appended to URL.
+
+D) Data cannot be viewed.
+
+Answer:C
+
+
+28. Which statement about POST is FALSE?
+
+A) Supports file upload
+
+B) Uses Form Body
+
+C) Can be bookmarked
+
+D) More secure than GET
+
+Answer:C
+
+
+29. What is called everything after "?" in a URL?
+
+		login.html?user=admin
+
+A) Form Body
+
+B) Query String
+
+C) Cache
+
+D) Session
+
+Answer:B
+
+
+30. Which symbol starts a Query String?
+
+A) &
+
+B) #
+
+C) ?
+
+D) %
+
+Answer:C
+
+
+31. Which symbol separates multiple values in Query String?
+
+A) #
+
+B) $
+
+C) &
+
+D) ?
+
+Answer:C
+
+
+32. Which method is recommended for Login Forms?
+
+A) GET
+
+B) POST
+
+C) Both
+
+D) None
+
+Answer:B
+
+
+33. Which method should generally NOT be used for passwords?
+
+A) POST
+
+B) GET
+
+C) DELETE
+
+D) PUT
+
+Answer:B
+
+
+34. Why is GET considered less secure?
+
+A) It is slow
+
+B) It stores data in URL
+
+C) It cannot submit data
+
+D) It deletes data
+
+Answer:B
+
+
+35. Choose the correct flow.
+
+A) User → Form → Server
+
+B) User → Form → method → action → Server
+
+C) User → action → method → Server
+
+D) Server → Form → User
+
+Answer:B
+
+
+36. Which attribute affects the "destination" of submitted data but "NOT" the data format?
+
+A) action
+
+B) method
+
+C) novalidate
+
+D) class
+
+Answer:A
+
+
+37. Which attribute disables browser validation?
+
+A) required
+
+B) action
+
+C) novalidate
+
+D) method
+
+Answer:C
+
+
+38. Which combination is correct?
+
+| Method  | Data Location |
+| ------- | ------------- |
+| A) GET  | Form Body     |
+| B) POST | Query String  |
+| C) GET  | Query String  |
+| D) POST | URL           |
+
+Answer:C
+
+
+39. Which one is "NOT" a form attribute covered so far?
+
+A) method
+
+B) action
+
+C) novalidate
+
+D) display
+
+Answer:D
+
+
+40. Which method is generally cached by browsers?
+
+A) GET
+
+B) POST
+
+C) Both
+
+D) None
+
+Answer:A
+
+
+41. Cache mainly improves
+
+A) Security
+
+B) Loading Speed
+
+C) File Size
+
+D) Database
+
+Answer:B
+
+
+42. Browser Cache stores data
+
+A) Permanently
+
+B) Temporarily
+
+C) Inside Database
+
+D) Inside RAM only
+
+Answer:B
+
+
+43. Which request normally does NOT get cached?
+
+A) GET
+
+B) POST
+
+C) Both
+
+D) None
+
+Answer:B
+
+
+44. Which method is suitable for searching products?
+
+A) POST
+
+B) GET
+
+C) DELETE
+
+D) PUT
+
+Answer:B
+
+Reason: Search results can be shared/bookmarked.
+
+
+45. Which method is suitable for creating a new user account?
+
+A) GET
+
+B) POST
+
+C) Both
+
+D) None
+
+Answer:B
+
+
+46. Which statement is correct?
+
+A) GET has unlimited data size.
+
+B) POST has unlimited URL length.
+
+C) POST can send large amounts of data.
+
+D) GET hides data.
+
+Answer:C
+
+
+47. Which statement about "action" is correct?
+
+A) It defines CSS.
+
+B) It specifies the destination page.
+
+C) It validates form.
+
+D) It creates a textbox.
+
+Answer:B
+
+
+48. Which attribute is mainly used for JavaScript/CSS reference?
+
+A) id
+
+B) method
+
+C) action
+
+D) novalidate
+
+Answer:A
+
+
+50. A form has
+
+<form method="POST" action="login.jsp">
+
+What happens after clicking Submit?
+
+A) Data is appended to URL.
+
+B) Data is sent to "login.jsp" using "POST".
+
+C) Data is deleted.
+
+D) Browser ignores the action attribute.
+
+Answer:B
+
+
+52. A user refreshes a page after submitting a POST form.
+
+What may happen?
+
+A) Browser may ask to resubmit the form.
+
+B) URL changes to Query String.
+
+C) Cache is cleared.
+
+D) Form becomes GET.
+
+Answer:A

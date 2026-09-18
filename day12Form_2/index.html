@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Camp 2026</title>
+</head>
+<body>
+    <header id="top" align="center">
+        <h1>Adventure Camp 2026</h1>
+        <p>Explore. Challenge. Conquer.</p>
+        <div>
+            <a href="#about">About Camp</a> | 
+            <a href="#activities">Activities</a> |
+            <a href="#register">Register</a> | 
+            <a href="#contact">Contact</a>
+        </div>
+    </header>
+    <hr>
+
+    <main>
+        <section id="about" align="center">
+            <h2>Welcome to Adventure Camp</h2>
+            <p>Join our exciting adventure camp and experience thrilling outdoor activities, challenges and teamwork.</p>
+            <figure>
+                <img src="./images/Adventure_4.png" 
+                     alt="Adventure"
+                     width="90%"
+                     height="450px">
+
+                <figcaption ><a href="#register">Join the Adventure</a></figcaption>
+            </figure>
+        </section>
+        <hr>
+        <section id="activities">
+            <h2>🔥 Adventure Activities</h2>
+            <div>
+                <h3>🏔️ Mountain Trekking</h3>
+                <p>Explore beautiful mountain trails and complete challenging trekking routes.</p>
+                <img src="./images/Mountain_Trekking.jpg"              alt="Mountain_Trekking"
+                width="250px"
+                height="150px">
+            </div>
+            <div>
+                <h3>🧗 Rock Climbing</h3>
+                <p>Test your strength and climbing skills with professional safety equipment.</p>
+                <img src="./images/Rock_Climbing.jpg" 
+                alt="Rock_Climbing"
+                width="250px"
+                height="150px">
+            </div>
+            <div>
+                <h3>🏕️ Camping</h3>
+                <p>Enjoy an unforgettable night under the stars with your adventure team.</p>
+                <img src="./images/camping.jpg" 
+                alt="Camping"
+                width="250px"
+                height="150px">
+            </div>            
+        </section>
+        <hr>
+
+        <section id="register">
+            <form>
+                <h2 align="center">📝 Participant Registration</h2>
+                <fieldset>
+                    <legend><strong>Personal Details</strong></legend>
+                    <div>
+                        <label for="name">Explorer Name:</label>
+                        <input type="text" 
+                                id="name" 
+                                name="name"
+                                placeholder="Enter your name"
+                                pattern=""
+                                autofocus
+                                required>
+                    </div>
+                    <br>
+                     <div>
+                        <label for="password">Create Password:</label>
+                        <input type="password" 
+                                id="password" 
+                                name="password" 
+                                placeholder="Create strong password"
+                                pattern=""
+                                required>
+                    </div> 
+                    <br>                  
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend><strong>Participant Details</strong></legend>
+                    <div>
+                        <label for="age">Age:</label>
+                        <input type="number"
+                               value="18" 
+                               min="18" 
+                               max="35"
+                               id="age"
+                               name="age"
+                               step="1"
+                               required>
+                    </div>
+                    <br>
+                     <div>
+                        <label for="fitness">Fitness Level:</label>
+                        <input type="range"
+                                id="fitness"
+                                min="0"
+                                max="100"
+                                value="70"
+                                step="5">
+                    </div> 
+                    <br>                  
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend><strong>Camp Schedule</strong></legend>
+                    <div>
+                        <label for="campDate">Camp Date:</label>
+                        <input id="campDate"
+                               name="campDate"
+                               type="date"
+                               required>
+                    </div>
+                    <br>
+                     <div>
+                        <label for="reportingTime">Reporting Time:</label>
+                        <input type="time"
+                               id="reportingTime"
+                               name="reportingTime"
+                               required>
+                    </div>
+                    <br> 
+                    <div>
+                        <label for="missionBrief">Mission Briefing:</label>
+                        <input type="datetime-local"
+                                id="missionBrief"
+                                name="missionBrief"
+                                required>
+                    </div>
+                    <br>
+                     <div>
+                        <label for="campMonth">Camp Month:</label>
+                        <input type="month"
+                                id="campMonth"
+                                name="campMonth"
+                                required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="tweek">Training Week:</label>
+                        <input type="week"
+                                id="tweek"
+                                name="tweek"
+                                required>
+                    </div>                  
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend><strong>Adventure Preferences</strong></legend>
+                    <div>
+                        <label for="pcolor">Preferred Adventure Suit Color:</label>
+                        <input type="color" 
+                                value="blue"
+                                id="pcolor"
+                                name="pcolor">
+                    </div>
+                     <div>
+                        <p><strong>Select Adventure Activities:</strong></p>
+                        <input type="checkbox">
+                        <label for="">Mountain Trekking</label>
+                        <br>
+                        <input type="checkbox">
+                        <label for=""> Rock Climbing</label>
+                        <br>
+                        <input type="checkbox">
+                        <label for=""> Camping</label>
+                        <br>
+                        <input type="checkbox">
+                        <label for="">River Rafting</label>
+                    </div>                   
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend><strong>Document Verification</strong></legend>
+                    <div>
+                        <label for="">Upload Identity Proof:</label>
+                        <input type="file">
+                    </div>
+                    <br>
+                     <div>
+                        <label for="">Upload Additional Documents:</label><br>
+                        <input type="file" multiple>
+                    </div>                   
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend><strong>About You</strong></legend>
+                    <div>
+                        <label for="">Why do you want to join Adventure Camp?</label>
+                        <br>
+                        <textarea name="" id="" cols="100" rows="5"></textarea> 
+                    </div>                 
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend><strong>Camp Status</strong></legend>
+                    <div>
+                        <label for="">Adventure Skill Level:</label>
+                        <input type="">
+                    </div>
+                     <div>
+                        <label for="">Registration Progress:</label>
+                        <input type="">
+                    </div>                   
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend><strong>Confirmation</strong></legend>
+                    <div>
+                        <input type="checkbox">
+                        <label for="">I agree to the Adventure Camp rules and safety guidelines.</label>
+                    </div>
+                     <div>
+                        <button type="submit">Register for Adventure</button>
+                        <button type="reset">Clear Form</button>
+                    </div>                   
+                </fieldset>
+            </form>
+        </section>
+        <hr>
+        <section id="contact" align="center">
+            <h2>📞 Need Help?</h2>
+            <p>Have questions about the camp?</p>
+            <div>
+                <a href="">Email Support</a> | 
+                <a href="">Call Support</a> | 
+                <a href="">Camp Guidelines (google)</a>
+            </div>
+        </section>
+    </main>
+    <hr>
+    <footer align="center">
+        <p>© 2026 Adventure Camp | All Rights Reserved</p>
+        <a href="#top">⬆ Back to Top</a>
+    </footer>
+    
+</body>
+</html>
