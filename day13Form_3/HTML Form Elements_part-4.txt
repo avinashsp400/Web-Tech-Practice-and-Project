@@ -1,0 +1,157 @@
+RADIO INPUT, CHECKBOX AND SELECT TAG - SIMPLE THEORY
+===========================================================
+
+1. RADIO INPUT
+---------------
+
+	Radio button is used when the user has to select only one option from a
+group of options.
+
+-> Radio buttons are created using:
+
+		<input type="radio">
+
+	Example:
+
+		<p>Select Gender:</p>
+
+		<input type="radio" name="gender" value="male"> Male
+		<input type="radio" name="gender" value="female"> Female
+		<input type="radio" name="gender" value="other"> Other
+
+	Output :
+
+			Male
+			Female
+			Other
+
+-> If you select Male, you cannot select Female or Other at the same time.
+
+-> Important Point, All radio buttons in the same group must have the same "name" attribute.
+
+		Example:
+			name="gender"
+
+-> All three radio buttons have the same name, so they belong to the same group.
+
+-> Real-life examples:
+		- Gender
+		- Payment method
+		- Yes / No
+		- Marital status
+
+
+2. CHECKBOX
+-----------
+
+	A checkbox is used when the user can select one or more options.
+
+-> Checkbox is created using:
+
+	<input type="checkbox">
+
+	Example:
+
+		<p>Select Skills:</p>
+
+		<input type="checkbox" name="skills" value="java"> Java
+		<input type="checkbox" name="skills" value="sql"> SQL
+		<input type="checkbox" name="skills" value="html"> HTML
+		<input type="checkbox" name="skills" value="css"> CSS
+
+	Output :
+		Java
+		SQL
+		HTML
+		CSS
+
+-> Here the user can select multiple options.
+
+-> Important Point, Checkboxes allow the user to select one or more options.
+
+--> Radio and checkbox difference:
+
+-> Radio:
+	- Usually select one option.
+	- Used for mutually exclusive choices.
+	- Example: Gender.
+
+-> Checkbox:
+	- Can select multiple options.
+	- Used for independent choices.
+	- Example: Skills.
+
+-> Real-life examples:
+		- Skills
+		- Hobbies
+		- Terms & Conditions
+		- Interests
+
+
+3. SELECT TAG
+-------------
+
+	The <select> tag is used to create a dropdown list.
+
+-> Inside <select>, we use <option> to define the choices.
+
+	Example:
+
+	<label>Select Course:</label>
+
+	<select name="course">
+	    <option value="java">Java</option>
+	    <option value="python">Python</option>
+	    <option value="javascript">JavaScript</option>
+	    <option value="sql">SQL</option>
+	</select>
+
+	Output:
+		Select Course: [ Java ]
+
+-> When the user clicks the dropdown, the options are:
+							- Java
+							- Python
+							- JavaScript
+							- SQL
+
+-> The user can select an option.
+
+
+
+4. SELECT WITH MULTIPLE
+-----------------------
+
+-> By default, <select> allows only one option.
+
+-> If we add the "multiple" attribute, the user can select multiple options.
+
+	Example:
+		<select name="skills" multiple>
+		    <option>Java</option>
+		    <option>SQL</option>
+		    <option>HTML</option>
+		    <option>CSS</option>
+		</select>
+
+-> Now the user can select multiple options.
+
+
+5. RADIO vs CHECKBOX vs SELECT
+------------------------------
+
+Feature              Radio             Checkbox             Select
+-----------------------------------------------------------------------
+Tag                  <input            <input               <select>
+                     type="radio">     type="checkbox">
+
+Choices              One               One or more          Usually one
+
+UI                   Round button      Square box           Dropdown
+
+Example              Gender            Skills               Course
+
+Multiple selection   No                Yes                   No by default
+
+
+-> Note: <select multiple> allows multiple selection.
