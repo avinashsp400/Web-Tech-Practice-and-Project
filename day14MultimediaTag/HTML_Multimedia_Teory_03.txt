@@ -1,0 +1,253 @@
+						HTML Multimedia
+					============================= 
+1. What is Multimedia?
+
+		Multimedia refers to different types of media that can be displayed on a webpage, such as Video, Audio, Images, and Animations.
+
+
+-> HTML Multimedia Tags,
+	
+	- <video>
+	- <audio>
+	- <iframe>
+	- <embed> (Obsolete)
+	- <marquee> (Obsolete)
+
+-> Obsolete means an old feature or tag that is no longer recommended to use because better alternatives are available.
+
+-> Modern websites mainly use:
+
+	- <video>
+	- <audio>
+	- <iframe>
+
+
+
+2. <video> Tag:
+
+	The <video> tag is used to "embed and play video files" directly inside a webpage.
+	
+	Simple Definition:
+		The <video> tag is an HTML element used to display and play video files without using any external plugin.
+
+		
+		Syntax:
+			<video src="movie.mp4" ></video>
+
+-> Important Attributes,
+
+| Attribute | Purpose                                             |
+| --------- | --------------------------------------------------- |
+| src       | Specifies the video file path.                      |
+
+| width     | Sets video width.                                   |
+
+| height    | Sets video height.                                  |
+
+| controls  | Displays Play, Pause, Volume, Fullscreen controls.  |
+
+| autoplay  | Starts the video automatically.                     |
+
+| poster    | Displays a thumbnail image before the video starts. |
+
+
+-> Important,
+
+Q. Why is the poster image not visible when autoplay is used?
+
+-> If autoplay starts successfully, the video begins immediately, so the poster disappears.
+
+-> If the browser blocks autoplay, the poster image remains visible.
+
+-> If a video has autoplay and muted, most browsers allow it to play automatically.
+
+-> If a video has autoplay but is not muted (has sound), most browsers block autoplay.
+
+
+
+3. <audio> Tag:
+
+	The <audio> tag is used to "embed and play audio files" inside a webpage.
+
+	Simple Definition:
+
+		The <audio> tag is an HTML element used to display and play audio files without using any external plugin.
+
+		Syntax:
+			<audio src="song.mp3" controls></audio>
+
+-> Important Attributes,
+
+| Attribute | Purpose                                |
+| --------- | -------------------------------------- |
+| src       | Specifies the audio file path.         |
+
+| controls  | Displays Play, Pause, Volume controls. |
+
+| 	  | Starts the audio automatically.        |
+
+
+-> Important,
+
+Q. Does the <audio> tag support the poster like <video> tag attribute?
+
+	No, Only the <video> tag supports the "poster" attribute.
+
+
+
+4. <marquee> Tag (Obsolete):
+		
+		The "<marquee>" tag is used to create "scrolling or moving text/images" on a webpage.
+
+
+Note: It is obsolete in HTML5. Modern websites use CSS Animations instead.
+
+
+			Syntax:
+				<marquee>Welcome</marquee>
+
+-> Important Attributes,
+
+| Attribute    | Purpose                                  |
+| ------------ | ---------------------------------------- |
+| direction    | Scroll direction (left, right, up, down) |
+
+| scrollamount | Controls scrolling speed                 |
+
+| behavior     | scroll, slide, alternate                 |
+
+| width        | Width of marquee                         |
+
+| height       | Height of marquee                        |
+
+| bgcolor      | Background color                         |
+
+| loop         | Number of times scrolling repeats        |
+
+
+-> Important,
+
+Q. If direction is "up" or "down", should we specify height?
+
+	Not compulsory, But "recommended", otherwise vertical scrolling may not be clearly visible.
+
+
+
+5. <embed> Tag (Obsolete):
+
+		The <embed> tag was used to embed PDFs, videos, audio, and other external content.
+
+-> Modern HTML recommends using:
+
+	- <video>
+	- <audio>
+	- <iframe>
+		instead of <embed>.
+
+
+
+6. Supported Audio Formats
+
+	These are the audio file formats that most modern web browsers can play using the <audio> tag,
+				
+				- ".mp3"
+				- ".wav"
+				- ".ogg"
+				- ".midi"
+
+-> ".mp3" is the most commonly used format.
+
+
+
+7. Supported Video Formats:
+
+	These are the video file formats that most modern web browsers can play using the <video> tag,
+
+			- ".mp4"
+			- ".ogg"
+			- ".avi"
+			- ".webm"
+
+-> ".mp4" is the most commonly used format.
+
+
+
+8. <iframe>
+
+-> What is an iframe?
+
+	- An iframe (Inline Frame) is an HTML element used to display another webpage or external content inside the current webpage.
+    
+	- It creates a rectangular area where another HTML page, YouTube video, Google Map, or PDF can be displayed without leaving the current page.
+
+
+-> Why do we use it?
+
+    - To display another webpage.
+    - To embed YouTube videos.
+    - To embed Google Maps.
+    - To display PDF files.
+
+		
+		Syntax:
+			<iframe
+        			src="about.html"
+       				width="500"
+        			height="300">
+        		</iframe>
+
+
+-> Key Points,
+
+	- Inline means inside the current webpage.
+	- Frame means a rectangular box.
+	- It does not open a new page.
+	- It loads another page inside the current page.
+
+   
+	 Real-Time Examples,
+		- YouTube Video
+		- Google Maps
+		- PDF Viewer
+		- Another HTML Page
+
+
+-> Importent,
+
+Q1. What does Inline Frame mean?
+	
+	Inline means inside the current webpage. Frame means a rectangular area.
+
+    Therefore,
+	Inline Frame means a rectangular box inside the current webpage that displays another webpage.
+
+
+Q2. Is it a frame inside another frame?
+
+	- Not exactly.
+
+	- It is better to say:
+		"A webpage inside another webpage."
+
+
+Q3. What is the difference between <a> and <iframe>?
+
+	- <a> takes the user to another page.
+
+	- <iframe> brings another page into the current page.
+
+-> Remember,
+
+	<a> -> Go to another page
+
+        <iframe> -> Bring another page here
+
+
+
+Q4. What does Inline Frame mean?
+
+	Inline = Inside the current webpage.
+	Frame  = A rectangular box.
+
+-> So,
+	Inline Frame = A rectangular box inside the current webpage that displays another webpage.
